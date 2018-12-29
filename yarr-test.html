@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>oO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <button type="button" style="margin: 20px; border: 1px solid black; background: white; font: 20px/40px Helvetica, sans-serif; padding: 0 20px; color: black" onclick="init()">yarr!</button>
+    <div id="board"></div>
+  </body>
+<style>
+  * {
+    margin: 0; 
+    padding: 0; 
+  }
+</style>
+<script>
+window.onload = init;
+
+function init () {
+
+  const C_LEN = 21;
+  const SIZE = Math.min(window.innerWidth, window.innerHeight);
+  const C_W = SIZE / C_LEN;
+  const $board = document.querySelector('#board');
+  $board.innerHTML = '';
+  Object.assign($board.style, {
+    width: SIZE + 'px',
+    height: SIZE + 'px',
+  });
+  const C_PAD = '10%';
+  const CORNER_POS_STYLE = [
+    { left: C_PAD, top: C_PAD },
+    { right: C_PAD, top: C_PAD },
+    { right: C_PAD, bottom: C_PAD },
+    { left: C_PAD, bottom: C_PAD },
+  ];
+
+  // CELLS
+  for(let x = 0; x < C_LEN; x++) {
+    for(let y = 0; y < C_LEN; y++) {
+      let $cell = document.createElement('DIV');
+      let isOdd = (x + y) % 2 === 0;
+      Object.assign($cell.style, {
+        background: isOdd ? 'black' : 'white',
+        width: C_W + 'px',
+        height: C_W + 'px',
+        position: 'relative',
+        display: 'inline-block',
+      });
+      $board.appendChild($cell);
+
+      // DOTS
+      if (isOdd && x >= 3 && y >= 3 && x < 18 && y < 18) {
+        for(let d = 0; d < 4; d++) {
+          if (Math.random() < .4) {
+            let $dot = document.createElement('DIV');
+
+            Object.assign($dot.style, {
+              width: Math.round(C_W / 7),
+              height: Math.round(C_W / 7),
+              background: 'white',
+              position: 'absolute',
+            });
+            Object.assign($dot.style, CORNER_POS_STYLE[d]);
+
+            $cell.appendChild($dot);
+          }
+        }
+      }
+    }
+  }
+
+}
+
+</script>
+</html>
