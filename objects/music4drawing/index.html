@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1; user-scalable=no">
+    <title>music4drawing (live mix) @ eleven.window | Vlad Pavlov</title>
+    <meta name="description" content="">
+
+    <meta property="og:url" content="https://influmtr.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="music4drawing (live mix) @ eleven.window | Vlad Pavlov">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://influmtr.com/static/assets/influmtr_preview_link.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/zIndex.css">
+    <link rel="stylesheet" href="/css/vars.css">
+    
+    <link rel="stylesheet" href="/css/index.css">
+    
+
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Vlad Pavlov">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Vlad Pavlov">
+    <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+    <script>
+      function $ (s) { return (this === window ? document : this).querySelector(s) }
+function $$ (s) { return [...(this === window ? document : this).querySelectorAll(s)] }
+function createEl (tag, props, children) {
+  const $el = document.createElement(tag);
+  if (props)
+    Object.entries(props).forEach(([name, val]) => {
+      if (name === 'style')
+        return Object.assign($el.style, val);
+      $el[name] = val;
+    });
+  if (children)
+    children.forEach($child => $el.append($child));
+  return $el;
+}
+function getScriptParent () { return document.currentScript.parentElement }
+    </script>
+  </head>
+  <body class="Root">
+    <style>
+.Routelink.--active { border-bottom: 1px solid var(--black) }
+</style>
+
+
+    <div class="d-flex --center l-mw-cont Topbar bg-blur">
+  <style>@import url(/css/Topbar.css)</style>
+
+  <nav class="d-flex --middle l-mw">
+    <h1 style="filter: url(&quot;#displace&quot;)">
+      <a href="/objects">
+        
+        ISh-
+      </a>
+    </h1>
+    
+    <div class="d-flex__space"></div>
+
+    <div class="Topbar__routes d-flex">
+      
+
+<a class="Routelink --active" href="/objects">
+  Objects</a>
+
+      
+
+<a class="Routelink " href="/about">
+  About</a>
+
+      
+      
+    </div>
+  </nav>
+
+
+</div>
+
+    <main>
+      <div class="l-content --pad Post">
+        <div class="l-content__paper">
+          <style>@import url(/css/Post.css)</style>
+<h1 class="__title">
+  music4drawing (live mix) @ eleven.window
+  <time datetime="2022-07-28">28 Jul 2022</time>
+</h1>
+<div class="Post__tags">
+  
+    
+    <a href="/objects/tags/music/" class="PostsItem__tag">music</a>
+  
+</div>
+
+
+<div class="Post__content">
+  <p>Live mix at <strong>music4drawing</strong>
+<a href="https://www.instagram.com/p/CgcgUt_q8Nj/">https://www.instagram.com/p/CgcgUt_q8Nj/</a></p>
+<iframe class="Post__sc" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1573495873&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+</div>
+
+<script>
+$$('.PostSlider').forEach($slider => {
+  let currentImg = 0;
+
+  const $imgs = [...$slider.children];
+  const $cont = createEl('div', { className: 'PostSlider__cont' });
+  $slider.append($cont);
+  $imgs.forEach($img => {
+    $cont.append($img);
+
+    if ($img.tagName === 'iframe')
+      $img.width = $slider.offsetWidth;
+      $img.height = $slider.offsetHeight;
+  });
+
+  const $lArrow = createEl('div', { className: 'PostSlider__arrow' });
+  const $rArrow = createEl('div', { className: 'PostSlider__arrow --right' });
+  $rArrow.addEventListener('click', e => process(++currentImg))
+  $lArrow.addEventListener('click', e => process(--currentImg))
+  $slider.append($lArrow);
+  $slider.append($rArrow);
+
+  process(currentImg);
+
+  function process (currentImg) {
+    $lArrow.classList.toggle('--visible', currentImg > 0);
+    $rArrow.classList.toggle('--visible', currentImg < $imgs.length - 1);
+    $imgs[0].style.marginLeft = `-${ currentImg * 100 }%`;
+  }
+});
+
+ytsOnResize();
+window.addEventListener('resize', ytsOnResize);
+function ytsOnResize ($yt) {
+  $$('.Post__yt').forEach($yt => {
+    $yt.style.height = $yt.offsetWidth * ($yt.getAttribute('ratio') || .56) + 'px';
+  });
+}
+
+$$('.Post__gal img').forEach($img => {
+  $img.addEventListener('click', e => window.open($img.src, '_blank'));
+});
+
+</script>
+
+
+
+        </div>
+      </div>
+    </main>
+
+    <style>@import url(/css/Footer.css)</style>
+<div class="Footer">
+   
+</div>
+
+    <!-- Current page: /objects/music4drawing/ -->
+  </body>
+</html>

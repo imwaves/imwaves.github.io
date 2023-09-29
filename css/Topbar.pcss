@@ -1,0 +1,35 @@
+.Topbar {
+  --link-c: var(--black);
+  height: var(--topb-h);
+  background: white;
+
+  h1 {
+    --color: #e4e8ed80;
+    background: -webkit-linear-gradient(141deg, #d23d35, #17e0f5);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  nav {
+    --gap: var(--m4);
+    font-size: 32px;
+  }
+
+  &__routes {
+    --gap-h: var(--m8);
+  }
+}
+
+@media (max-width: 480px) {
+  .Topbar__routes {
+    display: flex;
+    --gap-v: 0;
+    --gap-v: 0;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    a {
+      font-size: 28px;
+    }
+  }
+}

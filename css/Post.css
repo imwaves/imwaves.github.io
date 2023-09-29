@@ -1,0 +1,254 @@
+@import 'PostSlider.css';
+
+.Post {
+  --gap: var(--m6);
+
+  padding-top: var(--m10);
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.Post time {
+    color: var(--black);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+
+    margin-bottom: 5px;
+  }
+
+.Post .__title, .Post h1 {
+    font-weight: 500;
+    font-size: 40px;
+    /* line-height: 60px; */
+    line-height: 1em;
+    color: var(--black);
+
+    margin-bottom: var(--gap);
+  }
+
+.Post h2 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    color: var(--brand);
+  }
+
+.Post h1 a, .Post h2 a, .Post h3 a {
+      color: black;
+      font-size: .8em;
+      font-weight: normal;
+
+      opacity: .5;
+    }
+
+.Post h3, .Post h4, .Post h5, .Post h6 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: #000000;
+  }
+
+.Post__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+}
+
+.Post__content a,
+  .Post__content a:visited {
+    color: #A95831;
+    text-decoration: underline;
+  }
+
+.Post__content p { overflow: hidden }
+
+.Post__content > p > img {
+    width: 100%;
+    /* margin: 40px 0; */
+    /* max-width: 100%; */
+    max-height: calc(100vh - var(--topbar-h) - var(--page-pad) * 2);
+
+    /* @media (min-width: 740px) { border-radius: var(--border-r); } */
+  }
+
+.Post__content > ul li {
+      margin-left: 1em;
+    }
+
+.Post__content > ul li:before {
+        content: "\2022";
+        color: var(--brand);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+
+.Post__content > blockquote {
+    --s: 90px;
+    position:relative;
+    box-shadow: 0px 10.5892px 50px rgba(164, 188, 216, 0.3);
+    padding: 50px;
+    margin-top: calc(var(--s) / 2);
+  }
+
+@media (max-width: 1024px) {
+
+.Post__content > blockquote { --s: 60px 
+  }}
+
+.Post__content > blockquote:before {
+      width: var(--s);
+      height: var(--s);
+      border-radius: 100%;
+      position: absolute;
+      top: calc(-1 * var(--s) / 2);
+      left: calc(-1 * var(--s) / 2);
+      content: '';
+
+      background: var(--brand) url('../img/quotes.svg') center no-repeat;
+    }
+
+.Post__content > blockquote p {
+      width: 100%;
+
+      font-style: italic;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+
+      text-align: center;
+      color: var(--black);
+    }
+
+.Post__content > blockquote cite {
+      display: block;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 25px;
+      line-height: 40px;
+      text-align: center;
+      color: var(--black);
+      margin-top: 30px;
+    }
+
+.Post__content hr {
+    margin: 8px 0;
+  }
+
+.Post__yt-cap {
+  margin-top: -32px;
+
+  color: var(--black-50);
+  text-align: right;
+  font-size: 13px;
+}
+
+.Post__yt {
+  width: 100%;
+  /* height: 56%; */
+}
+
+.Post__tags {
+  display: flex;
+  gap: var(--m2);
+  margin-bottom: 16px;
+}
+
+.Post__tags > * {
+  display: inline-block;
+
+  --color: var(--brand);
+  font-size: 16px;
+  line-height: 1.5em;
+  text-decoration: none;
+
+  background: var(--black-10);
+  border-radius: 4px;
+}
+
+.Post__more > h1 {
+    margin: 60px 0;
+
+    font-size: 40px;
+  }
+
+.Post__gal {
+  /* --gap: 32px; */
+  --per-row: 2;
+  --prmo: 2; /*  per row minus one */
+  --item-w: calc(100% / var(--per-row) - (var(--per-row) - 1) * var(--gap) / var(--per-row));
+  display: flex;
+  gap: var(--gap);
+  flex-wrap: wrap;
+}
+
+.Post__gal img, .Post__gal video {
+    width: var(--item-w);
+    height: calc(var(--item-w) * .56);
+    box-shadow: 5px 5px 10px #d0d0d0;
+
+    -o-object-fit: contain;
+
+       object-fit: contain;
+    cursor: pointer;
+  }
+
+.Post__gal.--per2 { --per-row: 2 }
+
+.Post__gal.--per3 { --per-row: 3 }
+
+.Post__gal.--per4 { --per-row: 4 }
+
+@media (min-width: 741px) {
+  img,
+  video,
+  iframe {
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 740px) {
+    .Post h1 {
+      font-size: 30px;
+      line-height: 50px;
+      margin-top: 20px;
+    }
+
+    .Post h2,
+    .Post p,
+    .Post .Post__content > blockquote cite {
+      font-size: 20px;
+      line-height: 40px;
+    }
+
+    .Post h2 { margin-bottom: 66px}
+
+  .Post__yt,
+  .Post__gal {
+    --per-row: 1 !important;
+  }
+
+  .Post__yt,
+  .Post__gal {
+    --gap: var(--m);
+    width: calc(100% + 2 * var(--page-pad));
+    margin: 0 calc(-1 * var(--page-pad));
+  }
+
+  .Post__content {
+    --gap: var(--m4);
+  }
+
+    .Post__content > p > img {
+      width: calc(100% + 2*var(--page-pad));
+      margin-left: calc(-1*var(--page-pad));
+      -o-object-fit: contain;
+         object-fit: contain;
+    }
+}

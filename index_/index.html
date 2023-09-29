@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlad Pavlov</title>
+    <meta name="description" content="">
+
+    <meta property="og:url" content="https://influmtr.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vlad Pavlov">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://influmtr.com/static/assets/influmtr_preview_link.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/zIndex.css">
+    <link rel="stylesheet" href="/css/vars.css">
+    
+    <link rel="stylesheet" href="/css/index.css">
+    
+
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Vlad Pavlov">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Vlad Pavlov">
+    <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+    <script>
+      function $ (s) { return (this === window ? document : this).querySelector(s) }
+function $$ (s) { return [...(this === window ? document : this).querySelectorAll(s)] }
+function createEl (tag, props, children) {
+  const $el = document.createElement(tag);
+  if (props)
+    Object.entries(props).forEach(([name, val]) => {
+      if (name === 'style')
+        return Object.assign($el.style, val);
+      $el[name] = val;
+    });
+  if (children)
+    children.forEach($child => $el.append($child));
+  return $el;
+}
+function getScriptParent () { return document.currentScript.parentElement }
+    </script>
+  </head>
+  <body class="Root">
+    <style>
+.Routelink.--active { border-bottom: 1px solid var(--black) }
+</style>
+
+    <style>
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.intro a { font-size: 48px }
+</style>
+<div class="intro">
+  <a href="/objects">Enter</a>
+  <svg class="intro-noise">
+    <image id="intro-img" x="0%" y="00%" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQQAAAChCAMAAAAWcDHRAAAAA1BMVEUAAACnej3aAAAAP0lEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACcG6QlAAH3pAzcAAAAAElFTkSuQmCC" filter="url(#noise0)"></image>
+    <filter id="noise0" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feTurbulence type="turbulence" baseFrequency="0.005 0.005" numOctaves="3" seed="40" stitchTiles="noStitch" x="-0%" y="-50%" width="200%" height="200%" result="turbulence"/>
+      <feColorMatrix type="saturate" values="3" x="0%" y="0%" width="100%" height="100%" in="turbulence" result="colormatrix"/>
+      <feDisplacementMap in="colormatrix" in2="turbulence" scale="100" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" result="displacementMap"/>
+    </filter>
+  </svg>
+  <svg class="intro-noise" style="opacity: 0">
+    <image x="0%" y="00%" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xlink:href="url(#intro-img)" filter="url(#noise1)"></image>
+    <filter id="noise1" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feTurbulence type="turbulence" baseFrequency="0.005 0.005" numOctaves="3" seed="80" stitchTiles="noStitch" x="-0%" y="-50%" width="200%" height="200%" result="turbulence"/>
+      <feColorMatrix type="saturate" values="3" x="0%" y="0%" width="100%" height="100%" in="turbulence" result="colormatrix"/>
+      <feDisplacementMap in="colormatrix" in2="turbulence" scale="100" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" result="displacementMap"/>
+    </filter>
+  </svg>
+  <style>.intro-noise {position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh; pointer-events: none; opacity: var(--a-opaq);
+    transform: scale(1.2) translateX(-10px);
+    transition: var(--a-dur) opacity ease-in-out;
+  }</style>
+  <script>
+    let step = 0;
+    const $noises = $$('.intro-noise');
+    const animDur = 3e3;
+    const animOpaq = .6;
+    $noises.forEach(({ style }) => {
+      style.setProperty('--a-dur', `${ animDur / 1e3 }s`);
+      style.setProperty('--a-opaq', animOpaq);
+    });
+    anim();
+    setInterval(anim, animDur);
+    function anim () {
+      const s = Number(step % 2);
+      const ns = Number(!(step % 2));
+
+      $noises[s].style.opacity = 0;
+      $noises[ns].style.opacity = animOpaq;
+      setTimeout(() => {
+        $.call($noises[s], 'feTurbulence').seed.baseVal += 1 + s * 10;
+      }, animDur)
+      step++;
+    }
+  </script>
+</div>
+  </body>
+</html>

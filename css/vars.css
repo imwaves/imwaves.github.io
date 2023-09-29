@@ -1,0 +1,79 @@
+:root {
+  /* colors */
+  --brand: #ef3e3e;
+  --brand-hover: #df523f;
+  --link-hover: #3ba2ff;
+  --link-hover-50: rgba(59,162,255,0.53333);
+  --black: #39434e;
+
+  --link: #2dbaff;
+  --link-50: rgba(45,186,255,0.53333);
+  --link-10: #ecf8fe;
+
+  --accepted: #8bd55d;
+  --pale-grey: #e8eaec;
+  --black-50: rgba(57, 67, 78, 0.5);
+  --white: white;
+
+  --blue: rgb(90, 185, 249);
+  --green: rgb(156, 210, 109);
+  --red: #f36b4e;
+  --pink: rgb(229, 116, 196);
+
+  --warn: #ff9800;
+
+  --border-c: #c9d4dc;
+  --border-r: 20px;
+  --err-c: #c60202;
+
+  --accent-c: var(--brand);
+  --text-c: var(--black);
+
+  --page-mw: 960px;
+  --topb-h: 100px; /* could be setted from Topbar.vue */
+  --page-pad: 130px;
+  /*--main-pad: 16px;*/
+
+  --font-family: 'Ysabeau Office', sans-serif;
+  --font-size: 14px;
+  --font: normal var(--font-size) var(--font-family);
+
+  --m: 4px;
+  --m2: calc(2 * var(--m));
+  --m3: calc(3 * var(--m));
+  --m4: calc(4 * var(--m));
+  --m5: calc(5 * var(--m));
+  --m6: calc(6 * var(--m));
+  --m8: calc(8 * var(--m));
+  --m10: calc(8 * var(--m));
+
+  --gap: var(--m2);
+
+  --bb-blur: 3px;
+
+  --vh: 100vh; /*for IOS fix*/
+  --lw: 1440;
+  --vw-scale: var(--lw) * 100vw;
+  --sm-vw-scale: 375 * 100vw;
+}
+
+@media (max-width: 1023px) and (min-width: 740px) {
+  :root {
+    --page-pad: 48px;
+  }
+}
+
+@media (max-width: 739px) {
+  :root {
+    --topb-h: 100px;
+
+    --page-pad: 16px;
+    --font-size: 16px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 420px) {
+  :root {
+    --topb-h: 80px;
+  }
+}
