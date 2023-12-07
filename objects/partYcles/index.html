@@ -4,7 +4,7 @@
     <base href="">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1; user-scalable=no">
-    <title>Vlad Pavlov</title>
+    <title>partYcles | Vlad Pavlov</title>
     <meta name="description" content="">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,7 +61,7 @@ function getScriptParent () { return document.currentScript.parentElement }
     <div class="Topbar__routes d-flex">
       
 
-<a class="Routelink " href="/objects">
+<a class="Routelink --active" href="/objects">
   Objects</a>
 
       
@@ -78,79 +78,82 @@ function getScriptParent () { return document.currentScript.parentElement }
 </div>
 
     <main>
-      <div class="l-content --pad tmpl-home">
+      <div class="l-content --pad Post">
         <div class="l-content__paper">
-          
-
-<div class="TagList">
-  <style>@import url(/css/TagList.css)</style>
-
-  
-
-<a class="Routelink " href="/objects/">
-  all</a>
-
+          <style>@import url(/css/Post.css)</style>
+<h1 class="__title">
+  partYcles
+  <time datetime="2021-03-03">03 Mar 2021</time>
+</h1>
+<div class="Post__tags">
   
     
-    
-
-<a class="Routelink " href="/objects/tags/audiovisual/">
-  audiovisual</a>
-
+    <a href="/objects/tags/audiovisual/" class="PostsItem__tag">audiovisual</a>
   
     
-    
-
-<a class="Routelink " href="/objects/tags/gamedev/">
-  gamedev</a>
-
-  
-    
-    
-
-<a class="Routelink " href="/objects/tags/immersive/">
-  immersive</a>
-
-  
-    
-    
-
-<a class="Routelink " href="/objects/tags/installation/">
-  installation</a>
-
-  
-    
-    
-
-<a class="Routelink " href="/objects/tags/music/">
-  music</a>
-
-  
-    
-    
-
-<a class="Routelink " href="/objects/tags/radioelectronic/">
-  radioelectronic</a>
-
-  
-    
-    
-
-<a class="Routelink " href="/objects/tags/sound/">
-  sound</a>
-
-  
-    
-    
-
-<a class="Routelink " href="/objects/tags/web/">
-  web</a>
-
+    <a href="/objects/tags/web/" class="PostsItem__tag">web</a>
   
 </div>
 
-<h1 id="content-not-found" tabindex="-1">Content not found. <a class="direct-link" href="#content-not-found" aria-hidden="true">#</a></h1>
-<p>Go <a href="/">home</a>.</p>
+
+<div class="Post__content">
+  <p>Play with it here: <a href="https://dearwhoever.space/partYcles/">https://dearwhoever.space/partYcles/</a></p>
+<p>My first try to make texture feedback loop with cellular automatos actuated by interactive particles. Its realised with unexpected trick technology - SVG (sick!)</p>
+<div class="Post__gal">
+  <!-- <img src="poster.jpg"/> -->
+  <img src="partYcles-2.jpg"/>
+  <img src="partYcles-3.jpg"/>
+  <!-- <img src="dd5.jpg"/>
+  <img src="dd6.jpg"/> -->
+</div>
+
+</div>
+
+<script>
+$$('.PostSlider').forEach($slider => {
+  let currentImg = 0;
+
+  const $imgs = [...$slider.children];
+  const $cont = createEl('div', { className: 'PostSlider__cont' });
+  $slider.append($cont);
+  $imgs.forEach($img => {
+    $cont.append($img);
+
+    if ($img.tagName === 'iframe')
+      $img.width = $slider.offsetWidth;
+      $img.height = $slider.offsetHeight;
+  });
+
+  const $lArrow = createEl('div', { className: 'PostSlider__arrow' });
+  const $rArrow = createEl('div', { className: 'PostSlider__arrow --right' });
+  $rArrow.addEventListener('click', e => process(++currentImg))
+  $lArrow.addEventListener('click', e => process(--currentImg))
+  $slider.append($lArrow);
+  $slider.append($rArrow);
+
+  process(currentImg);
+
+  function process (currentImg) {
+    $lArrow.classList.toggle('--visible', currentImg > 0);
+    $rArrow.classList.toggle('--visible', currentImg < $imgs.length - 1);
+    $imgs[0].style.marginLeft = `-${ currentImg * 100 }%`;
+  }
+});
+
+ytsOnResize();
+window.addEventListener('resize', ytsOnResize);
+function ytsOnResize ($yt) {
+  $$('.Post__yt').forEach($yt => {
+    $yt.style.height = $yt.offsetWidth * ($yt.getAttribute('ratio') || .56) + 'px';
+  });
+}
+
+$$('.Post__gal img').forEach($img => {
+  $img.addEventListener('click', e => window.open($img.src, '_blank'));
+});
+
+</script>
+
 
 
         </div>
@@ -162,6 +165,6 @@ function getScriptParent () { return document.currentScript.parentElement }
    
 </div>
 
-    <!-- Current page: /404.html -->
+    <!-- Current page: /objects/partYcles/ -->
   </body>
 </html>

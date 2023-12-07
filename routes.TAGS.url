@@ -140,6 +140,13 @@ function getScriptParent () { return document.currentScript.parentElement }
   sound</a>
 
   
+    
+    
+
+<a class="Routelink " href="/objects/tags/web/">
+  web</a>
+
+  
 </div>
 
 <h1>Tags</h1>
@@ -165,6 +172,9 @@ function getScriptParent () { return document.currentScript.parentElement }
 
   
   <a href="/objects/tags/sound/" class="post-tag">sound</a>
+
+  
+  <a href="/objects/tags/web/" class="post-tag">web</a>
 
 
 

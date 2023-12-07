@@ -5,7 +5,7 @@
 	
 	<link href="https://dearwhoever.space/feed/feed.xml" rel="self"/>
 	<link href="https://dearwhoever.space/"/>
-	<updated>2023-04-28T00:00:00Z</updated>
+	<updated>2023-08-10T00:00:00Z</updated>
 	<id>https://dearwhoever.space/</id>
 	<author>
 		<name>Author</name>
@@ -78,6 +78,23 @@ Ilya Cherkashin - drums&lt;br /&gt;
 Alexey Tsogoev - ambience percussion&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://band.link/JGW7A&quot;&gt;https://band.link/JGW7A&lt;/a&gt;&lt;/p&gt;
 &lt;img src=&quot;https://dearwhoever.space/objects/shoobazze-fullmoon/fullmoon.jpg&quot; /&gt;</content>
+	</entry>
+	
+	<entry>
+		<title>partYcles</title>
+		<link href="https://dearwhoever.space/objects/partYcles/"/>
+		<updated>2021-03-03T00:00:00Z</updated>
+		<id>https://dearwhoever.space/objects/partYcles/</id>
+		<content type="html">&lt;p&gt;Play with it here: &lt;a href=&quot;https://dearwhoever.space/partYcles/&quot;&gt;https://dearwhoever.space/partYcles/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My first try to make texture feedback loop with cellular automatos actuated by interactive particles. Its realised with unexpected trick technology - SVG (sick!)&lt;/p&gt;
+&lt;div class=&quot;Post__gal&quot;&gt;
+  &lt;!-- &lt;img src=&quot;poster.jpg&quot;/&gt; --&gt;
+  &lt;img src=&quot;https://dearwhoever.space/objects/partYcles/partYcles-2.jpg&quot; /&gt;
+  &lt;img src=&quot;https://dearwhoever.space/objects/partYcles/partYcles-3.jpg&quot; /&gt;
+  &lt;!-- &lt;img src=&quot;dd5.jpg&quot;/&gt;
+  &lt;img src=&quot;dd6.jpg&quot;/&gt; --&gt;
+&lt;/div&gt;
+</content>
 	</entry>
 	
 	<entry>
@@ -237,6 +254,32 @@ at Dust&lt;br /&gt;
     &lt;source src=&quot;https://dearwhoever.space/objects/second.grain1/second-grain@dust.2.cut.crf20.mp4&quot; type=&quot;video/mp4&quot; /&gt;
   &lt;/video&gt;
 &lt;/div&gt;</content>
+	</entry>
+	
+	<entry>
+		<title>Physarum WebGL</title>
+		<link href="https://dearwhoever.space/objects/physarum/"/>
+		<updated>2023-08-10T00:00:00Z</updated>
+		<id>https://dearwhoever.space/objects/physarum/</id>
+		<content type="html">&lt;p&gt;Play with it here: &lt;a href=&quot;https://dearwhoever.space/physarum/&quot;&gt;https://dearwhoever.space/physarum/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;quot;Physarum polycephalum, an acellular slime mold or myxomycete popularly known as &amp;quot;the blob&amp;quot;, is a protist with diverse cellular forms and broad geographic distribution.&amp;quot; (wikipedia)&lt;/p&gt;
+&lt;p&gt;I didn&#39;t find any performant realisation of this algorithm in web environment on CPU, not to mention on the GPU. So I decided to experiment with my own vision of it directly with GLSL. Also it&#39;s audio-reactive! So you can try it with any music when you allow your mic to listen to it. In this 1st iteration audio affects the speed of particles.&lt;/p&gt;
+&lt;p&gt;Presented in lecture format on &amp;quot;3D NIGHT&amp;quot; @ F0RTHSP4CE, Tbilisi&lt;br /&gt;
+&lt;a href=&quot;https://t.me/tbilisi_3d_night/1329&quot;&gt;https://t.me/tbilisi_3d_night/1329&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://f0rth.space/&quot;&gt;https://f0rth.space/&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;Post__gal&quot;&gt;
+  &lt;!-- &lt;img src=&quot;poster.jpg&quot;/&gt; --&gt;
+  &lt;img src=&quot;https://dearwhoever.space/objects/physarum/phy-1.jpg&quot; /&gt;
+  &lt;img src=&quot;https://dearwhoever.space/objects/physarum/phy-2.jpg&quot; /&gt;
+  &lt;!-- &lt;img src=&quot;dd5.jpg&quot;/&gt;
+  &lt;img src=&quot;dd6.jpg&quot;/&gt; --&gt;
+&lt;/div&gt;
+&lt;p&gt;TODO:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use video&lt;/li&gt;
+&lt;li&gt;Adjustable noise for pheramones&lt;/li&gt;
+&lt;/ul&gt;
+</content>
 	</entry>
 	
 	<entry>

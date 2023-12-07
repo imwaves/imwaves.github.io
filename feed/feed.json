@@ -40,6 +40,12 @@
       "content_html": "<p>Improvisation album.<br />\nDreamy vibrations.</p>\n<p>Vlad Pavlov - guitar, vox<br />\nGeorgy Savarsky - bass, vox<br />\nIlya Cherkashin - drums<br />\nAlexey Tsogoev - ambience percussion</p>\n<p><a href=\"https://band.link/JGW7A\">https://band.link/JGW7A</a></p>\n<img src=\"https://dearwhoever.space/objects/shoobazze-fullmoon/fullmoon.jpg\" />",
       "date_published": "2021-02-07T00:00:00Z"
     },{
+      "id": "https://dearwhoever.space/objects/partYcles/",
+      "url": "https://dearwhoever.space/objects/partYcles/",
+      "title": "partYcles",
+      "content_html": "<p>Play with it here: <a href=\"https://dearwhoever.space/partYcles/\">https://dearwhoever.space/partYcles/</a></p>\n<p>My first try to make texture feedback loop with cellular automatos actuated by interactive particles. Its realised with unexpected trick technology - SVG (sick!)</p>\n<div class=\"Post__gal\">\n  <!-- <img src=\"poster.jpg\"/> -->\n  <img src=\"https://dearwhoever.space/objects/partYcles/partYcles-2.jpg\" />\n  <img src=\"https://dearwhoever.space/objects/partYcles/partYcles-3.jpg\" />\n  <!-- <img src=\"dd5.jpg\"/>\n  <img src=\"dd6.jpg\"/> -->\n</div>\n",
+      "date_published": "2021-03-03T00:00:00Z"
+    },{
       "id": "https://dearwhoever.space/objects/shoobazze-salam/",
       "url": "https://dearwhoever.space/objects/shoobazze-salam/",
       "title": "Shoobazze - Salam",
@@ -87,6 +93,12 @@
       "title": "Second.grain (live) @ Dust",
       "content_html": "<p>Audiovisual set for <strong>second.grain</strong> live performance.<br />\n<a href=\"https://www.instagram.com/p/CrYmhi4ghIm/\">https://www.instagram.com/p/CrYmhi4ghIm/</a> <br />\n<a href=\"https://www.instagram.com/second.grain/\">https://www.instagram.com/second.grain/</a> <br />\n<a href=\"https://linktr.ee/second.grain\">https://linktr.ee/second.grain</a> <br />\nat Dust<br />\n<a href=\"https://www.instagram.com/dust.tbilisi/\">https://www.instagram.com/dust.tbilisi/</a></p>\n<iframe class=\"Post__yt\" src=\"https://www.youtube.com/embed/kEv8-nBNHqw?version=3&autoplay=1&mute=1&showinfo=0&loop=1\" allow=\"autoplay; encrypted-media\" frameborder=\"0\" allowfullscreen=\"\"></iframe>\n<div class=\"Post__yt-cap\">https://www.youtube.com/watch?v=kEv8-nBNHqw</div>\n<div class=\"Post__gal\">\n  <video controls=\"\" playsinline=\"\" loop=\"\">\n    <source src=\"https://dearwhoever.space/objects/second.grain1/second-grain@dust.2.cut.crf20.mp4\" type=\"video/mp4\" />\n  </video>\n</div>",
       "date_published": "2023-04-28T00:00:00Z"
+    },{
+      "id": "https://dearwhoever.space/objects/physarum/",
+      "url": "https://dearwhoever.space/objects/physarum/",
+      "title": "Physarum WebGL",
+      "content_html": "<p>Play with it here: <a href=\"https://dearwhoever.space/physarum/\">https://dearwhoever.space/physarum/</a></p>\n<p>&quot;Physarum polycephalum, an acellular slime mold or myxomycete popularly known as &quot;the blob&quot;, is a protist with diverse cellular forms and broad geographic distribution.&quot; (wikipedia)</p>\n<p>I didn't find any performant realisation of this algorithm in web environment on CPU, not to mention on the GPU. So I decided to experiment with my own vision of it directly with GLSL. Also it's audio-reactive! So you can try it with any music when you allow your mic to listen to it. In this 1st iteration audio affects the speed of particles.</p>\n<p>Presented in lecture format on &quot;3D NIGHT&quot; @ F0RTHSP4CE, Tbilisi<br />\n<a href=\"https://t.me/tbilisi_3d_night/1329\">https://t.me/tbilisi_3d_night/1329</a><br />\n<a href=\"https://f0rth.space/\">https://f0rth.space/</a></p>\n<div class=\"Post__gal\">\n  <!-- <img src=\"poster.jpg\"/> -->\n  <img src=\"https://dearwhoever.space/objects/physarum/phy-1.jpg\" />\n  <img src=\"https://dearwhoever.space/objects/physarum/phy-2.jpg\" />\n  <!-- <img src=\"dd5.jpg\"/>\n  <img src=\"dd6.jpg\"/> -->\n</div>\n<p>TODO:</p>\n<ul>\n<li>Use video</li>\n<li>Adjustable noise for pheramones</li>\n</ul>\n",
+      "date_published": "2023-08-10T00:00:00Z"
     },{
       "id": "https://dearwhoever.space/objects/hexucinatory/",
       "url": "https://dearwhoever.space/objects/hexucinatory/",
