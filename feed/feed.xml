@@ -5,7 +5,7 @@
 	
 	<link href="https://dearwhoever.space/feed/feed.xml" rel="self"/>
 	<link href="https://dearwhoever.space/"/>
-	<updated>2023-08-10T00:00:00Z</updated>
+	<updated>2023-10-20T00:00:00Z</updated>
 	<id>https://dearwhoever.space/</id>
 	<author>
 		<name>Author</name>
@@ -263,8 +263,9 @@ at Dust&lt;br /&gt;
 		<id>https://dearwhoever.space/objects/physarum/</id>
 		<content type="html">&lt;p&gt;Play with it here: &lt;a href=&quot;https://dearwhoever.space/physarum/&quot;&gt;https://dearwhoever.space/physarum/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&amp;quot;Physarum polycephalum, an acellular slime mold or myxomycete popularly known as &amp;quot;the blob&amp;quot;, is a protist with diverse cellular forms and broad geographic distribution.&amp;quot; (wikipedia)&lt;/p&gt;
-&lt;p&gt;I didn&#39;t find any performant realisation of this algorithm in web environment on CPU, not to mention on the GPU. So I decided to experiment with my own vision of it directly with GLSL. Also it&#39;s audio-reactive! So you can try it with any music when you allow your mic to listen to it. In this 1st iteration audio affects the speed of particles.&lt;/p&gt;
-&lt;p&gt;Presented in lecture format on &amp;quot;3D NIGHT&amp;quot; @ F0RTHSP4CE, Tbilisi&lt;br /&gt;
+&lt;p&gt;I didn&#39;t find any performant realisation of this algorithm in web environment on CPU, not to mention on the GPU. So I decided to experiment with my own vision of it directly with GLSL and simulated compute shading on WebGL which doesn&#39;t support it for now. &lt;br /&gt;
+And ofcause it&#39;s audio-reactive! So you can try it with any music when you allow your mic to listen to it. In this 1st iteration audio affects the speed of particles.&lt;/p&gt;
+&lt;p&gt;Presented in a lecture format at the &amp;quot;3D NIGHT&amp;quot; @ F0RTHSP4CE, Tbilisi&lt;br /&gt;
 &lt;a href=&quot;https://t.me/tbilisi_3d_night/1329&quot;&gt;https://t.me/tbilisi_3d_night/1329&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://f0rth.space/&quot;&gt;https://f0rth.space/&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;Post__gal&quot;&gt;
@@ -280,6 +281,29 @@ at Dust&lt;br /&gt;
 &lt;li&gt;Adjustable noise for pheramones&lt;/li&gt;
 &lt;/ul&gt;
 </content>
+	</entry>
+	
+	<entry>
+		<title>Toys and surveillance @ NO W</title>
+		<link href="https://dearwhoever.space/objects/toysnsurveillance/"/>
+		<updated>2023-10-20T00:00:00Z</updated>
+		<id>https://dearwhoever.space/objects/toysnsurveillance/</id>
+		<content type="html">&lt;p&gt;Charity project. Interactive installation of “Toys and Surveillance” at an anti-war exhibition &amp;quot;NO W&amp;quot;.&lt;/p&gt;
+&lt;p&gt;The general message of the exhibition is to use simple symbols and to name things by theirs names. I have long wanted to speak out about toy tanks, since in childhood there were a lot of them and are now extremely popular computer games in war, both among adults and children. In my installation, the tanks move randomly, each of them is unprincipled and without communication with each other, like a swarming swarm on the piles of bodies. Observation comes from a certain person, which is constantly looking at one or the other, as an overseer with a flashlight. At such a moment, everything freezes and trembles in anticipation. Anyone who approaches the installation, focuses on this attention and manifests itself in a silhouette in the light of this red lantern, is in place “between” a meaningless battles and those who passionately oversees and manage.&lt;/p&gt;
+&lt;p&gt;Techs: kinect, projector&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NO W&lt;/strong&gt; exhibition &lt;br /&gt;
+&lt;a href=&quot;https://www.instagram.com/__no_w__foundation__/&quot;&gt;https://www.instagram.com/__no_w__foundation__/&lt;/a&gt; &lt;br /&gt;
+in Tbilisi &lt;strong&gt;Revolution&lt;/strong&gt; space &lt;br /&gt;
+&lt;a href=&quot;https://www.instagram.com/revolution_tbi/&quot;&gt;https://www.instagram.com/revolution_tbi/&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;Post__gal&quot;&gt;
+  &lt;img src=&quot;https://dearwhoever.space/objects/toysnsurveillance/tanks-1.jpg&quot; /&gt;
+  &lt;img src=&quot;https://dearwhoever.space/objects/toysnsurveillance/tanks-2.jpg&quot; /&gt;
+&lt;/div&gt;
+&lt;!-- Благотворительный проект. Интерактивная инсталляция “Toys and surveillance” на антивоенной выставке.
+ 
+Общий посыл выставки - использовать простые образы и называть вещи своими именами. Давно хотел высказаться на тему игрушечных танков, так как в детстве их было очень много кругом и сейчас крайне популярны компьютерные игры в войнушки, как среди взрослых, так и детей. 
+В моей инсталляции танки двигаются случайным образом, каждый из них безыдейно и без связи друг с другом, как копошащийся рой на грудах тел. Наблюдение происходит от некоторого лица, которое постоянно присматривается то к одному, то к другому, как надзиратель с фонариком. В такой момент всё замирает и трепещет в ожидании. Тот, кто подходит к инсталляции, фокусирует это внимание и проявляется силуэтом в свете этого красного фонаря, оказывается на месте “между” бессмысленной баталией и тем, кто страстно надзирает и управляет.
+ --&gt;</content>
 	</entry>
 	
 	<entry>
