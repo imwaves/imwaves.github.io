@@ -162,22 +162,12 @@
   </url>
   
   <url>
-    <loc>https://vladpavlov.xyz/objects/tags/gamedev/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vladpavlov.xyz/objects/tags/radioelectronic/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vladpavlov.xyz/objects/tags/web/</loc>
-    <lastmod>2023-07-29</lastmod>
-  </url>
-  
-  <url>
     <loc>https://vladpavlov.xyz/objects/tags/immersive/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vladpavlov.xyz/objects/tags/sound/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
   
@@ -187,7 +177,17 @@
   </url>
   
   <url>
-    <loc>https://vladpavlov.xyz/objects/tags/sound/</loc>
+    <loc>https://vladpavlov.xyz/objects/tags/radioelectronic/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vladpavlov.xyz/objects/tags/gamedev/</loc>
+    <lastmod>2023-07-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vladpavlov.xyz/objects/tags/web/</loc>
     <lastmod>2023-07-29</lastmod>
   </url>
   
